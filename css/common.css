@@ -64,7 +64,7 @@ img {
   border-radius: 4px;
 }
 
-.gallery {
+/* .gallery {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
@@ -72,9 +72,30 @@ img {
 }
 
 .gallery-item {
-  flex-basis: calc((100% - 48px * 2) / 3); /* Ширина одного елемента з урахуванням відступів */
+  flex-basis: calc((100% - 48px * 2) / 3); 
   box-sizing: border-box;
+} 
+
+*/
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  grid-auto-rows: 200px;
+  column-gap: 24px;
+  row-gap: 20px;
 }
+
+.gallery-item {
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+  transform: scale(1.015);
+}
+
+
+
 
 #name-input {
   height: 40px;
