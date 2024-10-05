@@ -64,16 +64,20 @@ img {
   border-radius: 4px;
 }
 
-  .gallery {
+  /* .gallery {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
   justify-content: center;
+} */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  grid-auto-rows: 200px;
+  column-gap: 24px;
+  row-gap: 20px;
 }
-
-
-
-
 
 
 #name-input {
