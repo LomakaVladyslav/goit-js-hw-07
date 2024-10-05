@@ -71,6 +71,11 @@ img {
   justify-content: center;
 }
 
+.gallery-item {
+  flex-basis: calc((100% - 48px * 2) / 3); /* Ширина одного елемента з урахуванням відступів */
+  box-sizing: border-box;
+}
+
 #name-input {
   height: 40px;
   width: 360px;
@@ -154,6 +159,7 @@ h1 {
   justify-content: flex-start;
   flex-direction: row;
   gap: 16px;
+  width: 486px;
   border-radius: 8px;
   padding: 32px;
   background-color: #F6F6FE;
@@ -193,6 +199,7 @@ h1 {
 
 #boxes {
   padding: 32px;
+  width: 486px;
   display: flex;
   flex-wrap: wrap;
   background-color: #F6F6FE;
